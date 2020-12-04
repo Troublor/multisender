@@ -66,7 +66,7 @@ class TxStore {
         this.txHashToIndex[hash] = index;
         this.txs[index] = {status: 'pending', name: `MultiSender Approval to spend ${this.tokenStore.totalBalance} ${this.tokenStore.tokenSymbol}`, hash}
         this.getTxStatus(hash)
-  
+
       })
       .on('error', (error) => {
         swal("Error!", error.message, 'error')
@@ -75,7 +75,7 @@ class TxStore {
     } catch (e){
       console.error(e)
     }
-    
+
   }
 
   async _multisend({slice, addPerTx}) {
@@ -84,15 +84,15 @@ class TxStore {
     }
     const token_address = this.tokenStore.tokenAddress
     let {addresses_to_send, balances_to_send, proxyMultiSenderAddress, currentFee, totalBalance} =  this.tokenStore;
-    
-    
+
+
     const start = (slice - 1) * addPerTx;
     const end = slice * addPerTx;
     addresses_to_send = addresses_to_send.slice(start, end);
     balances_to_send = balances_to_send.slice(start, end);
     let ethValue;
     if(token_address === "0x000000000000000000000000000000000000bEEF"){
-      
+
       const totalInWei = balances_to_send.reduce((total, num) => {
         return (new BN(total).plus(new BN(num)))
       })
@@ -137,12 +137,12 @@ class TxStore {
       if (slice > 0) {
         this._multisend({slice, addPerTx});
       } else {
-          
+
       }
     } catch(e){
       console.error(e)
     }
-  }  
+  }
 
   async getTxReceipt(hash){
     console.log('getTxReceipt')
@@ -164,7 +164,7 @@ class TxStore {
       const web3 = this.web3Store.web3;
       web3.eth.getTransactionReceipt(hash, (error, res) => {
         if(res && res.blockNumber){
-          if(res.status === '0x1'){
+          if(res.status === true){
             const index = this.txHashToIndex[hash]
             this.txs[index].status = `mined`
           } else {

@@ -9,7 +9,8 @@ let getWeb3 = () => {
       // Checking if Web3 has been injected by the browser (Mist/MetaMask)
       if (typeof web3 !== 'undefined') {
         // Use Mist/MetaMask's provider.
-        web3 = new window.Web3(web3.currentProvider)
+        window.ethereum.enable();
+        web3 = new window.Web3(window.ethereum)
         web3.version.getNetwork((err, netId) => {
           let netIdName, trustApiName, explorerUrl;
           console.log('netId', netId);
@@ -79,7 +80,7 @@ let getWeb3 = () => {
         https://metamask.io and return to this page after you installed it`
         reject({message: errorMsg})
         console.log('No web3 instance injected, using Local web3.');
-        console.error('Metamask not found'); 
+        console.error('Metamask not found');
       }
     })
   })

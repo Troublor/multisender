@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "flatten": "truffle-flattener UpgradebleStormSender.sol > flats/UpgradebleStormSender_flat.sol"
+    "flatten": "truffle-flattener contracts/multisender/UpgradebleStormSender.sol > flats/UpgradebleStormSender_flat.sol"
   },
   "author": "",
   "license": "ISC",

@@ -1,0 +1,54 @@
+{
+  "contracts": {},
+  "solidityLibs": {},
+  "proxies": {
+    "oz-deploy/UpgradebleStormSender": [
+      {
+        "address": "0x0DA18EBf3C1bA9c201B97693af91757040840664",
+        "kind": "NonProxy",
+        "bytecodeHash": "42de077a7c6d15e1162a81602bd26ed982dbd041d4b971ee4acabcd90b212b91"
+      },
+      {
+        "address": "0x0DA18EBf3C1bA9c201B97693af91757040840664",
+        "kind": "NonProxy",
+        "bytecodeHash": "42de077a7c6d15e1162a81602bd26ed982dbd041d4b971ee4acabcd90b212b91"
+      },
+      {
+        "address": "0x0DA18EBf3C1bA9c201B97693af91757040840664",
+        "kind": "NonProxy",
+        "bytecodeHash": "42de077a7c6d15e1162a81602bd26ed982dbd041d4b971ee4acabcd90b212b91"
+      },
+      {
+        "address": "0x0DA18EBf3C1bA9c201B97693af91757040840664",
+        "kind": "NonProxy",
+        "bytecodeHash": "42de077a7c6d15e1162a81602bd26ed982dbd041d4b971ee4acabcd90b212b91"
+      },
+      {
+        "address": "0x0DA18EBf3C1bA9c201B97693af91757040840664",
+        "kind": "NonProxy",
+        "bytecodeHash": "42de077a7c6d15e1162a81602bd26ed982dbd041d4b971ee4acabcd90b212b91"
+      },
+      {
+        "address": "0x0DA18EBf3C1bA9c201B97693af91757040840664",
+        "kind": "NonProxy",
+        "bytecodeHash": "42de077a7c6d15e1162a81602bd26ed982dbd041d4b971ee4acabcd90b212b91"
+      },
+      {
+        "address": "0x0DA18EBf3C1bA9c201B97693af91757040840664",
+        "kind": "NonProxy",
+        "bytecodeHash": "42de077a7c6d15e1162a81602bd26ed982dbd041d4b971ee4acabcd90b212b91"
+      },
+      {
+        "address": "0xc043de23614119b625CBAF5579547aF647535be4",
+        "kind": "NonProxy",
+        "bytecodeHash": "42de077a7c6d15e1162a81602bd26ed982dbd041d4b971ee4acabcd90b212b91"
+      },
+      {
+        "address": "0x0DA18EBf3C1bA9c201B97693af91757040840664",
+        "kind": "NonProxy",
+        "bytecodeHash": "42de077a7c6d15e1162a81602bd26ed982dbd041d4b971ee4acabcd90b212b91"
+      }
+    ]
+  },
+  "manifestVersion": "2.2"
+}
